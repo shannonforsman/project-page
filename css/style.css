@@ -1,0 +1,165 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url(http://fonts.googleapis.com/css?family=Lato:400,300,100,700);
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0; }
+
+* html .clearfix {
+  zoom: 1; }
+
+/* IE6 */
+*:first-child + html .clearfix {
+  zoom: 1; }
+
+/* IE7 */
+h1 {
+  font-family: 'lato';
+  color: #fff;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 1.2em; }
+
+h2 {
+  color: #fff;
+  font-family: 'lato';
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 1.2em; }
+
+a {
+  text-decoration: none;
+  font-family: 'lato'; }
+
+nav a {
+  color: #fff;
+  margin-left: 24px;
+  font-weight: 300; }
+
+main {
+  padding: 64px 0;
+  width: 1000px;
+  margin: 0 auto; }
+  main .third {
+    width: 30%;
+    float: left;
+    clear: left; }
+    main .third .item {
+      width: 30%;
+      float: left;
+      margin-right: 5%;
+      height: 88px;
+      background: #d1d1d1;
+      margin-bottom: 16px; }
+      main .third .item:nth-child(3n) {
+        margin-right: 0; }
+  main .two-thirds {
+    width: 60%;
+    float: right;
+    clear: right; }
+    main .two-thirds .show {
+      height: 40px;
+      width: 100%;
+      background: #e21137; }
+  main .portfolio {
+    clear: both; }
+  main .about {
+    margin-bottom: 24px; }
+    main .about h2 {
+      color: #e21137;
+      text-align: right; }
+
+header {
+  width: 100%;
+  background-image: url("../images/mountains.jpg");
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-attachment: fixed; }
+  header .gradient {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: #2aa391;
+    /* Old browsers */
+    background: -moz-linear-gradient(left, #2aa391 0%, #f8ed31 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left left, left right, color-stop(0%, #2aa391), color-stop(100%, #f8ed31));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left, #2aa391 0%, #f8ed31 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left, #2aa391 0%, #f8ed31 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(left, #2aa391 0%, #f8ed31 100%);
+    /* IE10+ */
+    background: linear-gradient(to right, #2aa391 0%, #f8ed31 100%);
+    /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=0 );
+    /* IE6-9 */
+    opacity: .8; }
+  header .header {
+    z-index: 200;
+    position: relative;
+    width: 1000px;
+    margin: 0 auto;
+    padding: 50px; }
+    header .header .title {
+      border: 2px solid #fff;
+      padding: 16px;
+      width: 256px;
+      float: left; }
+    header .header nav {
+      width: 50%;
+      float: right;
+      text-align: right;
+      margin-top: 24px; }

@@ -1,0 +1,35 @@
+header {
+  width: 100%;
+  background-image: url('../images/mountains.jpg');
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-attachment: fixed;
+  .gradient {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    @include linearGradient($blue, $yellow);
+    opacity: .8;
+  }
+  .header {
+    z-index: 200;
+    position: relative;
+    width: 1000px;
+    margin: 0 auto;
+    padding: 50px;
+    .title {
+      border: 2px solid $white;
+      padding: 16px;
+      width: 256px;
+      float: left;
+    }
+    nav {
+      width: 50%;
+      float: right;
+      text-align: right;
+      margin-top: 24px;
+    }
+  }
+}

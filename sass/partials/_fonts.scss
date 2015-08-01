@@ -1,0 +1,28 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:400,300,100,700);
+
+h1 {
+  font-family: 'lato';
+  color: $white;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 1.2em;
+}
+
+h2 {
+  color: $white;
+  font-family: 'lato';
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 1.2em;
+}
+
+a {
+  text-decoration: none;
+  font-family: 'lato';
+}
+
+nav a {
+  color: $white;
+  margin-left: 24px;
+  font-weight: 300;
+}
