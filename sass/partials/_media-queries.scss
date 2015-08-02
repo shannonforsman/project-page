@@ -1,0 +1,70 @@
+@media (max-width: 1060px) {
+  main {
+    width: 90%;
+  }
+  .header {
+    width: 90%;
+  }
+}
+
+@media (max-width: 850px) {
+  .about .third, .about .two-thirds {
+    width: 100%;
+    h2 {
+      text-align: left;
+    }
+  }
+  h1 {width: 200px; float: left; font-size: 24px;  }
+  h2 {width: 200px; float: left; font-weight: 100; }
+  header {height: 170px;}
+  .header {
+    padding-top: 32px;
+    .title {width: 100%; float: left; padding: 0;}
+    nav {
+    width: 100%;
+    margin-top: 16px;
+    float: left;
+    text-align: left;
+    .content {
+      float: left;
+      margin-top: 16px;
+      padding: 0 48px 16px 0;
+      .close {top: 7px; }
+    }
+    a {
+      color: #484848;
+      margin-left: 0;
+      margin-right: 16px;
+    }
+    p {
+      color: #484848;
+    }
+  }
+  }
+  .project-info {
+    width: 90%;
+    left: 5%;
+  }
+  .item {height: 68px; margin-bottom: 8px}
+  .show.portfolio {height: 219px}
+  .third {width: 32%;}
+}
+
+@media (max-width: 650px) {
+  main {padding: 32px 0;}
+  .third.grid {
+    width:100%;
+    .item {
+      width: 18%;
+      margin-right: 2.5%;
+      margin-bottom: 12px;
+      height: 80px;
+      &:nth-child(5n) {
+        margin-right: 0;
+      }
+    }
+  }
+  .two-thirds {width:100%;}
+  .about {margin-bottom: 16px;}
+  .grid .item {height: 58px; margin-bottom: 8px;}
+}

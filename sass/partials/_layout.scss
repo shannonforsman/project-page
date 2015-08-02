@@ -1,41 +1,101 @@
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
 main {
   padding: 64px 0;
   width: 1000px;
   margin: 0 auto;
-  .third {
-    width: 30%;
-    float: left;
-    clear: left;
-    .item {
-      width: 30%;
-      float: left;
-      margin-right: 5%;
-      height: 88px;
-      background: $grey;
-      margin-bottom: 16px;
-      &:nth-child(3n) {
-        margin-right: 0;
-      }
-    }
+}
+
+.two-thirds {
+  width: 66%;
+  float: right;
+  clear: right;
+  .show {
+    height: 40px;
+    width: 100%;
+    background: $red;
   }
-  .two-thirds {
-    width: 60%;
-    float: right;
-    clear: right;
-    .show {
-      height: 40px;
-      width: 100%;
-      background: $red;
-    }
+}
+
+.item {
+  width: 30%;
+  float: left;
+  margin-right: 5%;
+  height: 88px;
+  margin-bottom: 16px;
+  position: relative;
+  &:nth-child(3n) {
+    margin-right: 0;
   }
-  .portfolio {
-    clear: both;
+}
+
+
+
+.third {
+  width: 30%;
+  float: left;
+  clear: left;
+}
+
+.portfolio {
+  clear: both;
+}
+
+.about {
+  margin-bottom: 48px;
+}
+
+.show {
+  display: none;
+}
+
+.show.portfolio {
+  display: block;
+  height: 298px;
+  position: relative;
+  &:hover .project-info {
+    @include transition(all .4s ease);
+    opacity: 1;
   }
-  .about {
-    margin-bottom: 24px;
-    h2 {
-      color: $red;
-      text-align: right;
-    }
+  &:hover .color {
+    @include transition(all .4s ease);
+    opacity: .3;
   }
+  .color {
+    background-color: $white;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+  }
+}
+
+.overlay {
+  @include transition(all .4s ease);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: $grey;
+  opacity: .5;
+
+  &:hover {
+    cursor: pointer;
+    opacity: 0;
+    @include transition(all .4s ease);
+  }
+}
+
+.project-info {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  z-index: 200;
+  width: 50%;
+  background: #fff;
+  padding: 16px;
+  line-height: 1.2em;
+  box-shadow: 2px 2px 10px rgba(0,0,0, .2)
 }

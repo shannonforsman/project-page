@@ -2,21 +2,36 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Shannon Forsman</title>
+  <title>shannon forsman</title>
   <link rel="stylesheet" href="css/style.css">
+  <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 </head>
 <body>
 <header>
   <div class="gradient"></div>
   <div class="header">
     <div class="title">
-      <h1>Shannon Forsman</h1>
-      <h2>Full-Stack developer</h2>
+      <h1>shannon forsman</h1>
+      <h2>full-stack developer</h2>
     </div>
     <nav>
-      <a href="#">github</a>
-      <a href="#">design + photography</a>
-      <a href="#">contact</a>
+      <a class='nav-links' data-target='github'>github</a>
+      <a class='nav-links' data-target='design'>design + photography</a>
+      <a class='nav-links' data-target='contact'>contact</a>
+      <div id="navInfo">
+        <div class='inner' id="contact">
+          <img class='close' src="images/close.png" alt="">
+          <p>Get in touch with me at <a href='mailto:sforsman1@gmail.com'>sforsman1@gmail.com</a></p>
+        </div>
+        <div class='inner' id="design">
+          <img class='close' src="images/close.png" alt="">
+          <p>Design and photo site at <a href='http://www.shannonforsman.com' target='_blank'>shannonforsman.com</a></p>
+        </div>
+        <div class='inner' id="github">
+          <img class='close' src="images/close.png" alt="">
+          <p>More projects at <a href="https://github.com/shannonforsman" target='_blank'>github.com/shannonforsman</a></p>
+        </div>
+      </div>
     </nav>
   </div>
 </header>
@@ -28,24 +43,106 @@
     <div class="two-thirds">
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </div>
-
   </section>
   <section class='portfolio'>
     <section class="grid third">
-      <div class="item"></div>
-      <div class="item"></div>
-      <div class="item"></div>
-      <div class="item"></div>
-      <div class="item"></div>
-      <div class="item"></div>
-      <div class="item"></div>
-      <div class="item"></div>
-      <div class="item"></div>
+      <div class="item" data-grid='item1'>
+        <div class="overlay"></div>
+      </div>
+      <div class="item" data-grid='item2'>
+        <div class="overlay"></div>
+      </div>
+      <div class="item" data-grid='item3'>
+        <div class="overlay"></div>
+      </div>
+      <div class="item" data-grid='item4'>
+        <div class="overlay"></div>
+      </div>
+      <div class="item" data-grid='item5'>
+        <div class="overlay"></div>
+      </div>
+      <div class="item" data-grid='item6'>
+        <div class="overlay"></div>
+      </div>
+      <div class="item" data-grid='item7'>
+        <div class="overlay"></div>
+      </div>
+      <div class="item" data-grid='item8'>
+        <div class="overlay"></div>
+      </div>
+      <div class="item" data-grid='item9'>
+        <div class="overlay"></div>
+      </div>
     </section>
   </section>
   <section class="grid-display two-thirds">
-    <div class="show"></div>
+    <div class="show portfolio" id="item1">
+      <div class="project-info">
+        <h3>Fire Tracker</h3>
+        <p>Check out a map of all current active U.S. fires and their respective twitter feeds.</p>
+        <a href="#" class='github-link'>github repo</a>
+        <a href="#" class='project-link'>Project Link</a>
+      </div>
+      <div class="color"></div>
+    </div>
+    <div class="show" id="item2">
+      <div class="project-info">
+        <h3>Calculator</h3>
+        <p>Just felt like making something that does math. Check it out!</p>
+        <a href="#" class='github-link'>github repo</a>
+        <a href="#" class='project-link'>Project Link</a>
+      </div>
+      <div class="color"></div>
+    </div>
+    <div class="show" id="item3">
+      <div class="project-info">
+        <h3>tic-tac-toe</h3>
+        <p>Take a minute and play some good ol' fashioned tic-tac-toe.</p>
+        <a href="#" class='github-link'>github repo</a>
+        <a href="#" class='project-link'>Project Link</a>
+      </div>
+      <div class="color"></div>
+    </div>
+    <div class="show" id="item4">
+      <div class="project-info">
+        <h3>Reddit API</h3>
+        <p>Saving subreddit searches to local storage for easy reading.</p>
+        <a href="https://github.com/shannonforsman/reddit-api-js" target="_blank" class='github-link'>github repo</a>
+        <a href="http://shannonforsman.github.io/reddit-api-js/" target="_blank" class='project-link'>Project Link</a>
+      </div>
+      <div class="color"></div>
+    </div>
+    <div class="show" id="item5">
+      <div class="project-info">
+        <h3>Pure CSS image slideshow</h3>
+        <p>Check out this slideshow made with CSS keyframe animations</p>
+        <a href="https://github.com/shannonforsman/Death-Valley" target="_blank" class='github-link'>github repo</a>
+        <a href="http://shannonforsman.github.io/Death-Valley/" target="_blank" class='project-link'>Project Link</a>
+      </div>
+      <div class="color"></div>
+    </div>
+    <div class="show" id="item6">
+      <div class="project-info">
+        <h3>Simple CSS background effect</h3>
+        <p>Super simple but aesthetic fixed background effect</p>
+        <a href="https://github.com/shannonforsman/Death-Valley" target="_blank" class='github-link'>github repo</a>
+        <a href="http://shannonforsman.github.io/Death-Valley/" target="_blank" class='project-link'>Project Link</a>
+      </div>
+      <div class="color"></div>
+    </div>
+    <div class="show" id="item7">
+      <div class="color"></div>
+    </div>
+    <div class="show" id="item8">
+      <div class="color"></div>
+    </div>
+    <div class="show" id="item9">
+      <div class="color"></div>
+
+      hi
+    </div>
   </section>
 </main>
+<script src='client.js'></script>
 </body>
 </html>
