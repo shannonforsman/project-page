@@ -72,4 +72,22 @@
   .two-thirds {width:100%;}
   .about {margin-bottom: 16px;}
   .grid .item {height: 58px; margin-bottom: 8px;}
+  .header nav {
+    a {
+    color: #484848;
+    margin-left: 0;
+    margin-right: 6px;
+    margin-left: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    }
+    p {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.2em;
+    }
+    .content {
+      margin-top: 8px;
+    }
+}
 }
