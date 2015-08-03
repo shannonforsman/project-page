@@ -15,7 +15,7 @@
     }
   }
   h1 {width: 200px; float: left; font-size: 24px;  }
-  h2 {width: 200px; float: left; font-weight: 100; }
+  h2 {width: 250px; float: left; font-weight: 300; }
   header {height: 170px;}
   .header {
     padding-top: 32px;
@@ -34,7 +34,11 @@
     a {
       color: #484848;
       margin-left: 0;
-      margin-right: 16px;
+      margin-right: 12px;
+      margin-left: 12px;
+      &:first-child {
+        margin-left: 0;
+      }
     }
     p {
       color: #484848;
@@ -48,6 +52,7 @@
   .item {height: 68px; margin-bottom: 8px}
   .show.portfolio {height: 219px}
   .third {width: 32%;}
+  .pipe {display: inline; color: #484848;}
 }
 
 @media (max-width: 650px) {

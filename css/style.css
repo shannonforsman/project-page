@@ -236,6 +236,9 @@ main {
   line-height: 1.2em;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2); }
 
+.pipe {
+  display: none; }
+
 header {
   width: 100%;
   background-image: url("../images/mountains.jpg");
@@ -380,9 +383,9 @@ header {
     float: left;
     font-size: 24px; }
   h2 {
-    width: 200px;
+    width: 250px;
     float: left;
-    font-weight: 100; }
+    font-weight: 300; }
   header {
     height: 170px; }
   .header {
@@ -405,7 +408,10 @@ header {
       .header nav a {
         color: #484848;
         margin-left: 0;
-        margin-right: 16px; }
+        margin-right: 12px;
+        margin-left: 12px; }
+        .header nav a:first-child {
+          margin-left: 0; }
       .header nav p {
         color: #484848; }
   .project-info {
@@ -417,7 +423,10 @@ header {
   .show.portfolio {
     height: 219px; }
   .third {
-    width: 32%; } }
+    width: 32%; }
+  .pipe {
+    display: inline;
+    color: #484848; } }
 
 @media (max-width: 650px) {
   main {
