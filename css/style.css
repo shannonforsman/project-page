@@ -413,7 +413,8 @@ header {
         .header nav a:first-child {
           margin-left: 0; }
       .header nav p {
-        color: #484848; }
+        color: #484848;
+        font-weight: 500; }
   .project-info {
     width: 90%;
     left: 5%; }
@@ -447,16 +448,20 @@ header {
   .grid .item {
     height: 58px;
     margin-bottom: 8px; }
-  .header nav a {
-    color: #484848;
-    margin-left: 0;
-    margin-right: 6px;
-    margin-left: 6px;
-    font-size: 14px;
-    font-weight: 500; }
-  .header nav p {
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 1.2em; }
-  .header nav .content {
-    margin-top: 8px; } }
+  .header nav {
+    max-height: 90px; }
+    .header nav a {
+      color: #484848;
+      margin-left: 0;
+      margin-right: 6px;
+      margin-left: 6px;
+      font-size: 14px;
+      font-weight: 500; }
+    .header nav p {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 1.2em; }
+    .header nav .content {
+      margin-top: 10px; }
+      .header nav .content .close {
+        top: 2px; } }

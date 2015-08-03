@@ -42,6 +42,8 @@
     }
     p {
       color: #484848;
+      font-weight: 500;
+
     }
   }
   }
@@ -73,6 +75,7 @@
   .about {margin-bottom: 16px;}
   .grid .item {height: 58px; margin-bottom: 8px;}
   .header nav {
+    max-height: 90px;
     a {
     color: #484848;
     margin-left: 0;
@@ -87,7 +90,10 @@
     line-height: 1.2em;
     }
     .content {
-      margin-top: 8px;
+      margin-top: 10px;
+      .close {
+        top: 2px;
+      }
     }
 }
 }
