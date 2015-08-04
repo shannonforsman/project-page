@@ -47,11 +47,11 @@ header {
   height: 87px;
   float: right;
   margin-top: 16px;
-  padding: 16px 48px 16px 8px;
+  padding: 16px 32px 16px 8px;
   .close {
     position: absolute;
     top: 22px;
-    right: 16px;
+    right: 0px;
     width: 16px;
     @include transition(all .3s ease);
     &:hover {

@@ -1,17 +1,8 @@
 $(document).ready(function(){
-  var navs = $('.nav-links')
-  var close = $('.close')
+
   var items = $('.item')
 
-navs.on('click', function() {
-  $('.inner').removeClass('content')
-  var open = $(this).data('target');
-  $('#' + open).addClass('content');
-})
-
-close.click(function(){
-  $(this).closest('.inner').removeClass('content')
-})
+$('.item:first-child .overlay').css({'opacity': '0'})
 
 items.on('click', function() {
   $('.show').removeClass('portfolio')
@@ -21,13 +12,5 @@ items.on('click', function() {
   console.log(open)
   $('#' + open).addClass('portfolio');
 })
-
-
-
-
-
-
-
-
 
 })

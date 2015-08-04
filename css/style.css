@@ -2,7 +2,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-@import url(http://fonts.googleapis.com/css?family=Lato:400,300,100,700);
+@import url(http://fonts.googleapis.com/css?family=Lato:400,400italic,300,300italic,100,700);
 @import url(http://fonts.googleapis.com/css?family=Ubuntu:400,500,700,300);
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -142,6 +142,16 @@ p {
 .project-link {
   margin-left: 16px; }
 
+em {
+  font-weight: 300;
+  font-style: italic; }
+
+strong {
+  font-weight: 600; }
+
+.resume p {
+  margin-bottom: 16px; }
+
 *, *:after, *:before {
   box-sizing: border-box; }
 
@@ -159,15 +169,17 @@ main {
     width: 100%;
     background: #e21137; }
 
-.item {
+.item, .resume-item {
   width: 30%;
   float: left;
   margin-right: 5%;
-  height: 88px;
   margin-bottom: 16px;
   position: relative; }
-  .item:nth-child(3n) {
+  .item:nth-child(3n), .resume-item:nth-child(3n) {
     margin-right: 0; }
+
+.item {
+  height: 88px; }
 
 .third {
   width: 30%;
@@ -301,11 +313,11 @@ header {
   height: 87px;
   float: right;
   margin-top: 16px;
-  padding: 16px 48px 16px 8px; }
+  padding: 16px 32px 16px 8px; }
   .content .close {
     position: absolute;
     top: 22px;
-    right: 16px;
+    right: 0px;
     width: 16px;
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
@@ -385,7 +397,8 @@ header {
   h2 {
     width: 250px;
     float: left;
-    font-weight: 300; }
+    font-weight: 300;
+    margin-bottom: 8px; }
   header {
     height: 170px; }
   .header {
@@ -396,7 +409,7 @@ header {
       padding: 0; }
     .header nav {
       width: 100%;
-      margin-top: 16px;
+      margin-top: 8px;
       float: left;
       text-align: left; }
       .header nav .content {
@@ -448,20 +461,18 @@ header {
   .grid .item {
     height: 58px;
     margin-bottom: 8px; }
-  .header nav {
-    max-height: 90px; }
-    .header nav a {
-      color: #484848;
-      margin-left: 0;
-      margin-right: 6px;
-      margin-left: 6px;
-      font-size: 14px;
-      font-weight: 500; }
-    .header nav p {
-      font-size: 14px;
-      font-weight: 500;
-      line-height: 1.2em; }
-    .header nav .content {
-      margin-top: 10px; }
-      .header nav .content .close {
-        top: 2px; } }
+  .header nav a {
+    color: #484848;
+    margin-left: 0;
+    margin-right: 6px;
+    margin-left: 6px;
+    font-size: 14px;
+    font-weight: 500; }
+  .header nav p {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.2em; }
+  .header nav .content {
+    margin-top: 10px; }
+    .header nav .content .close {
+      top: 2px; } }

@@ -15,14 +15,14 @@
     }
   }
   h1 {width: 200px; float: left; font-size: 24px;  }
-  h2 {width: 250px; float: left; font-weight: 300; }
+  h2 {width: 250px; float: left; font-weight: 300; margin-bottom: 8px;}
   header {height: 170px;}
   .header {
     padding-top: 32px;
     .title {width: 100%; float: left; padding: 0;}
     nav {
     width: 100%;
-    margin-top: 16px;
+    margin-top: 8px;
     float: left;
     text-align: left;
     .content {
@@ -75,7 +75,6 @@
   .about {margin-bottom: 16px;}
   .grid .item {height: 58px; margin-bottom: 8px;}
   .header nav {
-    max-height: 90px;
     a {
     color: #484848;
     margin-left: 0;
