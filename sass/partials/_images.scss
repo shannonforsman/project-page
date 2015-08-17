@@ -4,26 +4,31 @@
 }
 
 .item[data-grid*='2'] {
-  background-image: url('../images/calculator-thumb.jpg');
+  background-image: url('../images/sun-dial-thumb.jpg');
   background-size: cover;
 }
 
 .item[data-grid*='3'] {
-  background-image: url('../images/tic-tac-toe-thumb.jpg');
+  background-image: url('../images/calculator-thumb.jpg');
   background-size: cover;
 }
 
 .item[data-grid*='4'] {
-  background-image: url('../images/reddit-thumb.jpg');
+  background-image: url('../images/tic-tac-toe-thumb.jpg');
   background-size: cover;
 }
 
 .item[data-grid*='5'] {
-  background-image: url('../images/slideshow-thumb.jpg');
+  background-image: url('../images/reddit-thumb.jpg');
   background-size: cover;
 }
 
 .item[data-grid*='6'] {
+  background-image: url('../images/slideshow-thumb.jpg');
+  background-size: cover;
+}
+
+.item[data-grid*='7'] {
   background-image: url('../images/background-thumb.jpg');
   background-size: cover;
 }
@@ -34,26 +39,31 @@
 }
 
 #item2 {
-  background-image: url('../images/calculator.jpg');
+  background-image: url('../images/sun-dial.jpg');
   background-size: cover;
 }
 
 #item3 {
-  background-image: url('../images/tic-tac-toe.jpg');
+  background-image: url('../images/calculator.jpg');
   background-size: cover;
 }
 
 #item4 {
-  background-image: url('../images/reddit.jpg');
+  background-image: url('../images/tic-tac-toe.jpg');
   background-size: cover;
 }
 
 #item5 {
-  background-image: url('../images/slideshow.jpg');
+  background-image: url('../images/reddit.jpg');
   background-size: cover;
 }
 
 #item6 {
+  background-image: url('../images/slideshow.jpg');
+  background-size: cover;
+}
+
+#item7 {
   background-image: url('../images/background.jpg');
   background-size: cover;
 }
